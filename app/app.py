@@ -42,7 +42,7 @@ with open(
 
 st.set_page_config(
     page_title="Flight Price Prediction",
-    page_icon="✈️",
+    page_icon="",
     layout="centered"
 )
 
@@ -51,7 +51,7 @@ st.set_page_config(
 # 5. Title
 # ==========================================
 
-st.title("✈️ Flight Price Prediction")
+st.title(" Flight Price Prediction")
 
 st.write(
     "Predict the estimated price of a flight using Machine Learning."
@@ -144,7 +144,7 @@ days_left = st.number_input(
 # 8. Prediction
 # ==========================================
 
-if st.button("🔮 Predict Price"):
+if st.button("Predict Price"):
 
     if flight.strip() == "":
         st.warning("Please enter the flight number.")
@@ -174,7 +174,7 @@ if st.button("🔮 Predict Price"):
 
         # Display prediction
         st.success(
-            f"💰 Estimated Flight Price: {price:.2f}"
+            f" Estimated Flight Price: {price:.2f}"
         )
 
         st.info(
